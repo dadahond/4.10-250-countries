@@ -1,0 +1,11 @@
+body {
+    background: radial-gradient( circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+h1 {
+    display: grid;
+    place-self: center;
+    color: rgb(246, 17, 17);
+    font-size: 250px;
+    text-align: center;
+}
