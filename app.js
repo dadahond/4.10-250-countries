@@ -10,10 +10,9 @@ const tillar = countries.reduce((acc, curVal) => {
   return acc;
 }, {});
 
-// Tillarga ko'ra sanash natijasini massivi sifatida olish va eng ko'p tillarni olish
 const top5Tillar = Object.entries(tillar)
-  .sort((a, b) => b[1] - a[1]) // Sanash asosida kamaytirish tartibida
-  .slice(0, 5) // Faqat birinchi 5 ta tilni olish
-  .map(([tilNomi, soni]) => `${tilNomi}: ${soni}`); // Natijalarni formatlash
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 5)
+  .map(([tilNomi, soni]) => `${tilNomi}: ${soni}`);
 
 console.log(top5Tillar);
